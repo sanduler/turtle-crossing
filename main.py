@@ -25,6 +25,10 @@ while game_is_on:
         generate = 0
     cars_garage.movement()
 
+    for car in cars_garage.all_cars:
+        if player.distance(car) < 30:
+            game_is_on = False
+
     if player.ycor() > 280:
         player.start_pos()
     generate += 1
