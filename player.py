@@ -12,10 +12,12 @@ class Player(Turtle):
         self.color("white")
         self.heading()
         self.left(90)
-        self.start_pos()
+        self.goto(STARTING_POSITION)
+        self.move_speed = 0.1
 
     def go_up(self):
         self.forward(MOVE_DISTANCE)
 
     def start_pos(self):
         self.goto(STARTING_POSITION)
+        self.move_speed *= 0.7
