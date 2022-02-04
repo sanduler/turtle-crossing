@@ -24,9 +24,6 @@ while game_is_on:
         cars_garage.add_car()
         generate = 0
     cars_garage.movement()
-    # cars.movement()
-    # if cars.xcor() < -330:
-    #     cars.random_start()
     if player.ycor() > 280:
         player.start_pos()
     generate += 1
