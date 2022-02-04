@@ -165,4 +165,4 @@ Project Link: [https://github.com/sanduler/turtle-crossing](https://github.com/s
 [license-url]: https://github.com/sanduler/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: img/sim1.png
+[product-screenshot]: img/img4.png

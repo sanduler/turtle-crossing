@@ -16,6 +16,7 @@ screen.setup(width=600, height=600)
 # set the background color of the window
 screen.bgcolor("black")
 screen.tracer(0)
+screen.title("Turtle Crossing")
 # initialize a player, cars_garage, and current_score objects from the respective classes
 player = Player()
 cars_garage = CarManager()
