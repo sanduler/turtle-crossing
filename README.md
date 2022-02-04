@@ -32,14 +32,10 @@
 <h3 align="center">Turtle Crossing</h3>
 
   <p align="center">
-    In the Coffee Machine Simulator, the user can select a drink by typing
-the desired drink: espresso, latte, or cappuccino. The program will check if there are 
-enough ingredients and then let the user know. In the case there are enough ingredients 
-then the program will ask the user to enter the number of quarters, dimes, nickles, and pennies 
-they have. Afterward, the program will let them know if they entered a valid amount based
-on the price of the coffee. The user can get the 'report' where it will display
-the number of ingredients left and the Money that the machine-made.
-If the user wants to exit the simulation then they would type 'off'.
+    Turtle crossing is a replica of the classic Frogger game developed in 1981. 
+    The goal of the game is to get the player - turtle - 
+    across without getting hit by an object. This game was built by using the Turtle class which is prebuilt into
+    Python. The game uses the aspects of Object-Oriented-Design to keep itself modular. 
     <br />
     <a href="https://github.com/sanduler/turtle-crossing"><strong>Explore the docs »</strong></a>
     <br />
@@ -54,7 +50,6 @@ If the user wants to exit the simulation then they would type 'off'.
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <p>The goal of the project is to provide a real life simulation of a vending machine process. <p>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
