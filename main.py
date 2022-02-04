@@ -38,5 +38,7 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     cars.movement()
+    if cars.xcor() < -330:
+        cars.random_start()
     if player.ycor() > 280:
         player.start_pos()

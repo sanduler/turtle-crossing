@@ -9,7 +9,6 @@ class CarManager(Turtle):
     def __init__(self):
         super().__init__()
         self.penup()
-        self.color("White")
         self.shape("square")
         self.shapesize(stretch_wid=2, stretch_len=1)
         self.left(90)
@@ -19,9 +18,11 @@ class CarManager(Turtle):
         self.move_speed = 0.03
 
     def movement(self):
+        # self.random_start()
         new_x = self.xcor() + self.x_move
         new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
 
     def random_start(self):
-        self.goto(0, random.randrange(-280, 280))
+        self.color(random.choice(COLORS))
+        self.goto(320, random.randrange(-280, 280))
