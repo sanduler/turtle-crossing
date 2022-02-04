@@ -6,6 +6,7 @@ from scoreboard import Scoreboard
 
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.bgcolor("black")
 screen.tracer(0)
 player = Player()
 # turtle = Turtle()
@@ -26,3 +27,6 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
+    if player.ycor() > 280:
+        player.start_pos()
