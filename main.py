@@ -20,6 +20,14 @@ player = Player()
 # def go_up():
 #     turtle.forward(30)
 
+# Car object
+car = Turtle()
+car.penup()
+car.color("White")
+car.shape("square")
+car.shapesize(stretch_wid=2, stretch_len=1)
+car.left(90)
+car.goto(250, 0)
 screen.listen()
 screen.onkey(player.go_up, "Up")
 
