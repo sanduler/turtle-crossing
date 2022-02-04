@@ -6,9 +6,27 @@ from scoreboard import Scoreboard
 
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.bgcolor("black")
 screen.tracer(0)
-turtle = Turtle("Black")
+player = Player()
+# turtle = Turtle()
+# turtle.penup()
+# turtle.shape("turtle")
+# turtle.heading()
+# turtle.left(90)
+# turtle.goto(0, -280)
+
+
+# def go_up():
+#     turtle.forward(30)
+
+screen.listen()
+screen.onkey(player.go_up, "Up")
+
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
+    if player.ycor() > 280:
+        player.start_pos()
