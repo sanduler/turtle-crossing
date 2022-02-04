@@ -8,25 +8,23 @@ screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.tracer(0)
+
 player = Player()
-# turtle = Turtle()
-# turtle.penup()
-# turtle.shape("turtle")
-# turtle.heading()
-# turtle.left(90)
-# turtle.goto(0, -280)
-
-
-# def go_up():
-#     turtle.forward(30)
+cars_garage = CarManager()
 
 screen.listen()
 screen.onkey(player.go_up, "Up")
 
+generate = 0
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+    if generate == 6:
+        cars_garage.add_car()
+        generate = 0
+    cars_garage.movement()
 
     if player.ycor() > 280:
         player.start_pos()
+    generate += 1
