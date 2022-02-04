@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/sanduler/turtle-crossingy">
-    <img src="img/img0.png" alt="Logo" width="880" height="140">
+    <img src="img/img0.png" alt="Logo" width="880" height="440">
   </a>
 
 <h3 align="center">Turtle Crossing</h3>
