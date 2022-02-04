@@ -11,7 +11,7 @@ screen.tracer(0)
 
 player = Player()
 cars_garage = CarManager()
-score = Scoreboard()
+current_score = Scoreboard()
 
 screen.listen()
 screen.onkey(player.go_up, "Up")
@@ -29,7 +29,9 @@ while game_is_on:
     for car in cars_garage.all_cars:
         if player.distance(car) < 30:
             game_is_on = False
+            current_score.game_over()
 
     if player.ycor() > 280:
         player.start_pos()
+        current_score.increase_score()
     generate += 1
