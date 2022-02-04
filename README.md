@@ -124,8 +124,9 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="center"><a>Pictures of the game in actions are shown:</a></p>
 <a href="https://github.com/sanduler/coffee-machine-py">
-    <img src="img/img1.png" alt="Pictures">
-    <img src="img/img2.png" alt="Pictures">
+    <img src="img/img1.png" alt="Pictures" width="600" height="600">
+    <img src="img/img2.png" alt="Pictures" width="600" height="600">
+    <img src="img/img3.png" alt="Pictures" width="600" height="600">
   </a>
 
 _For more examples, please refer to the [Documentation](https://example.com)_
