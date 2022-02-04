@@ -9,7 +9,8 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.tracer(0)
 player = Player()
-cars = CarManager()
+cars_garage = CarManager()
+# for cars in range(CarManager)
 # turtle = Turtle()
 # turtle.penup()
 # turtle.shape("turtle")
@@ -33,12 +34,16 @@ cars = CarManager()
 screen.listen()
 screen.onkey(player.go_up, "Up")
 
+# # garage = []
+# count = 0
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    cars.movement()
-    if cars.xcor() < -330:
-        cars.random_start()
+    cars_garage.add_car()
+    cars_garage.movement()
+    # cars.movement()
+    # if cars.xcor() < -330:
+    #     cars.random_start()
     if player.ycor() > 280:
         player.start_pos()
