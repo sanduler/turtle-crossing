@@ -1,4 +1,6 @@
 from turtle import Turtle
+
+# font for the scoreboard
 FONTS = ("Courier", 24, "normal")
 # Alignment of the scoreboard on the screen
 ALIGNMENT = "center"
@@ -11,9 +13,9 @@ class Scoreboard:
     def __init__(self):
         # start the score at 0
         self.level_display = Turtle()
-
-        self.level = 0
-        # lift up the pen so it wont draw
+        # user level
+        self.level = 1
+        # lift up the pen so it won't draw
         self.level_display.penup()
         # set the color to white
         self.level_display.color(SCORE_COLOR)
