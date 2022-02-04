@@ -11,6 +11,7 @@ screen.tracer(0)
 
 player = Player()
 cars_garage = CarManager()
+score = Scoreboard()
 
 screen.listen()
 screen.onkey(player.go_up, "Up")
