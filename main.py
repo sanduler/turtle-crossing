@@ -24,6 +24,7 @@ while game_is_on:
         cars_garage.add_car()
         generate = 0
     cars_garage.movement()
+
     if player.ycor() > 280:
         player.start_pos()
     generate += 1
